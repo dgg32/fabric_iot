@@ -17,7 +17,14 @@ SwitchBot Hub
 
 1. Set up the hardware and Fabric environment as described in the article.
 
-2. Run the switchbot_send_to_eventhub.py to send data to Event Hub.
+2. Create a config.yaml file with the following structure:
+```yaml
+switchbot_token: "Your SwitchBot token here"
+switchbot_secret: "Your SwitchBot secret here"
+eventhub_connection_string: "Your Event Hub connection string here"
+```
+
+3. Run the switchbot_send_to_eventhub.py to send data to Event Hub.
 ```
 python switchbot_send_to_eventhub.py
 ```
